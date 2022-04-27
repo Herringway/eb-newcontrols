@@ -1,9 +1,8 @@
 newcontrols.ips: newcontrols.sfc
 newcontrols.sfc: newcontrols.asm
-patch:
 
 clean:
-	$(RM) *.sfc
+	$(RM) *.sfc *.ips
 
 %.sfc: %.asm
 	bass -o "$@" "$<"
